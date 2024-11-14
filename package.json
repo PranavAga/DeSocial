@@ -1,0 +1,24 @@
+{
+  "name": "decentralized-social-media",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A decentralized social media application",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "compile": "npx hardhat compile && cp artifacts/contracts/SocialMedia.sol/SocialMedia.json frontend/src/abis/",
+    "deploy": "npx hardhat run scripts/deploy.js --network localhost"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "ethers": "^5.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "hardhat": "^2.9.1"
+  }
+}

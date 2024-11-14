@@ -1,0 +1,223 @@
+/* Define Color Palette */
+:root {
+  --soft-blue: #a8d0e6;
+  --muted-pink: #f76c6c;
+  --creamy-beige: #f9f3e9;
+  --text-dark: #333;
+  --text-light: #fafafa;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: var(--creamy-beige);
+  color: var(--text-dark);
+}
+
+/* Header Styles */
+.app-header {
+  background-color: var(--soft-blue);
+  color: var(--text-dark);
+  padding: 15px 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--muted-pink);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+/* Connect Wallet Button */
+.connect-button {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: var(--muted-pink);
+  color: var(--text-light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.connect-button:hover {
+  background-color: #e35b5b;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar,
+.follow-list {
+  width: 20%;
+  padding: 20px;
+  background-color: var(--soft-blue);
+  word-wrap: break-word;
+}
+
+.sidebar h2,
+.follow-list h2 {
+  color: var(--text-dark);
+}
+
+.sidebar ul,
+.follow-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li,
+.follow-list ul li {
+  margin-bottom: 10px;
+}
+
+/* Main Content Styles */
+.main-content {
+  width: 60%;
+  padding: 20px;
+}
+
+/* Create Post Styles */
+.create-post form {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.create-post button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--muted-pink);
+  color: var(--text-light);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.create-post button:hover {
+  background-color: #e35b5b;
+}
+
+/* Post Styles */
+.post {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+}
+
+.post-actions button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.post-actions button:hover {
+  opacity: 0.9;
+}
+
+.post-actions button:nth-child(1) {
+  background-color: var(--soft-blue);
+  color: var(--text-dark);
+}
+
+.post-actions button:nth-child(2) {
+  background-color: var(--muted-pink);
+  color: var(--text-light);
+}
+
+.post-actions span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* Donate Styles */
+.donate {
+  margin-top: 10px;
+}
+
+.donate input {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.donate button {
+  padding: 5px 10px;
+  background-color: var(--muted-pink);
+  color: var(--text-light);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.donate button:hover {
+  background-color: #e35b5b;
+}
+
+/* Comment Section Styles */
+.comment-section {
+  margin-top: 10px;
+}
+
+.comments-container {
+  background-color: #f9f3e9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.comments-container form {
+  margin-bottom: 10px;
+}
+
+.comments-container .ql-container {
+  height: 100px;
+}
+
+.comments-list .comment {
+  margin-bottom: 15px;
+}
+
+.comments-list .comment p {
+  margin: 5px 0;
+}
+
+.comments-list .timestamp {
+  font-size: 0.8em;
+  color: #555;
+}
+
+.comments-list hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .follow-list,
+  .main-content {
+    width: 100%;
+  }
+}
