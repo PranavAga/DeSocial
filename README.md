@@ -11,6 +11,7 @@ This project is an enhanced decentralized social media application that allows u
 - [Dependencies](#dependencies)
 - [Project Structure](#project-structure)
 - [How to Run Locally](#how-to-run-locally)
+- [Screenshots of Execution](#screenshots-of-execution)
 - [Additional Notes](#additional-notes)
 
 ---
@@ -183,6 +184,57 @@ npm install
   - Promote and Demote posts.
   - Follow other users.
   - Donate to content creators.
+
+## Screenshots of Execution
+Below are the screenshots demonstrating the workflow and features of the project:
+
+### User 1 adds a post and confirms transaction
+![User 1 adds post](screenshots/1.png)
+
+### The post is added to the chain
+![Post added to chain](screenshots/2.png)
+
+### Interface for adding comments
+![Add comment interface](screenshots/3.png)
+
+### User 1 adds a comment and confirms transaction
+![User 1 adds comment](screenshots/4.png)
+
+### Comment is added to the chain
+![Comment added to chain](screenshots/5.png)
+
+### User 2 logs in and sees the posts (feed)
+![User 2 sees posts](screenshots/6.png)
+
+### User 2 'Promote' the post and confirms transaction
+![User 2 promotes post](screenshots/7.png)
+
+### Promotion of post increases reputation
+![Post reputation increase](screenshots/8.png)
+
+### User 2 wants to follow User 1
+![User 2 follows User 1](screenshots/9.png)
+
+### User 2 follows User 1 and confirms transaction
+![Follow confirmation](screenshots/10.png)
+
+### User 2 is following User 1
+![User 2 following User 1](screenshots/11.png)
+
+### User 2 adds a comment and confirms transaction
+![User 2 adds comment](screenshots/12.png)
+
+### User 2's comment added to chain
+![User 2's comment added](screenshots/13.png)
+
+### User 2 donates to the author of the post
+![User 2 donates](screenshots/14.png)
+
+### User 2 adds a rich text post and confirms transaction
+![User 2 adds rich text post](screenshots/15.png)
+
+### User 2's post is added to chain
+![Rich text post added](screenshots/16.png)
 
 ## Additional Notes
 
